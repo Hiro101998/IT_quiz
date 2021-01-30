@@ -106,7 +106,7 @@ const clickHandler =(e) =>{
        window.alert('正解です!');
        score++
     }else{
-           window.alert('不正解です…');
+           window.alert('不正解です。\n'+'正解は…'+quiz[quizIndex].correct+'です');
    }
    quizIndex++;
 
@@ -115,7 +115,7 @@ const clickHandler =(e) =>{
      setupQuiz();
    }else{
      //なければこっちを実行
-     window.alert('終了です。あなたの正解数は全' + quizLength + '問中' + score + '問です。');
+     window.alert('終了です。\nあなたの正解数は全' + quizLength + '問中' + score + '問です。');
      window.location.href = 'index.html';
    }
   };
